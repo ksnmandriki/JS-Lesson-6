@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Пример скрипта</title>
+  <script type="text/javascript">
+    /**Наберите в VSCode код странички co скриптом, в котором реализуем динамическое изменение изображений с помощью 
+функций. Сохраните полученный результат под именем index72.html */
+    function up() {
+      document.mypic.src = "on.jpg"
+    }
+    function down() {
+      document.mypic.src = "off.jpg"
+    }
+    function up2() {
+      document.mypic2.src = "on.jpg"
+    }
+    function down2() {
+      document.mypic2.src = "off.jpg"
+    }
+  </script>
+</head>
+
+<body>
+  <h2>Пример анимации</h2>
+  <a href="https://itiu.bsu.by" onMouseOver="up()" onMouseOut="down()">
+    <img src="off.jpg" name="mypic"></a>
+  <a href="https://onliner.by/" onMouseOver="up2()" onMouseOut="down2()">
+    <img src="off.jpg" name="mypic2"></a>
+</body>
+
+</html>

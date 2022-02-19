@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Пример скрипта</title>
+  <script>
+/**Наберите в VSCode код скрипта, создающий документ, образующийся по ходу работы (On The Fly)! Сохраните полученный 
+результат под именем index70.html и откройте (запустите) его в любом браузере*/
+    function openWin3() {
+      myWin = open("", "newWindow", "width=500,height=400,status=yes,toolbar=no,menubar=yes");
+      // открываем документ 
+      myWin.document.open();
+      // создаем документ
+      myWin.document.write("<html><head><title>Ha лету!");
+      myWin.document.write("</title><style>#qerty{color:navy;font-size:30px;text-align:center;</style></head><body>");
+      myWin.document.write("<p id=qerty>");
+      myWin.document.write("Наш HTML-документ создан ");
+      myWin.document.write("при помощи JavaScript! ");
+      myWin.document.write("</p>");
+      // Закрываем документ (но не окно!) 
+      myWin.document.close()
+    }
+  </script>
+</head>
+
+<body>
+  <form style="text-align:center;">
+    <input type="button" value="On-the-fly" onClick="openWin3() "></input>
+  </form>
+
+</body>
+
+</html>

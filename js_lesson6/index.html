@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM-песочница</title>
+  <link rel="stylesheet" href="./css/style1.css">
+  <script src="./js/dom.js"></script>
+</head>
+<body>
+  <!-- Поменяйте приветствие с "Привет Всем!" на "Привет Виталий Валентинович!".-->
+  <div id="greeting">
+    Привет Виталий Валентинович!
+  </div>
+  <hr>
+  <div class="content">
+    Основы:
+  </div>
+
+  <div id="essentials">
+    <ul>
+      <li>молоко</li>
+      <li class="selected">мёд</li>
+      <li>вода</li>
+      <li>вино</li>
+      <li>пиво</li>
+    </ul>
+  </div>
+  <!-- Создайте тег изображения, установите его атрибут `src` на`http://49.media.tumblr.com/tumblr_m6qt1rjPSz1rxjzkho1_500.gif`, и вложите в div с идентификатором `#greeting`.-->
+  <div id="#greeting">
+    <img src="http://49.media.tumblr.com/tumblr_m6qt1rjPSz1rxjzkho1_500.gif" title="#" alt="#">
+  </div>
+
+  <div>
+    <img src="./images/honey.jpg" height="60" width="60" title="мёд" alt="мёд">
+  </div>
+
+  <div id="ghosting">
+    Прикоснись ко мне, и я исчезну!
+  </div>
+
+  <div id="resize">
+    Прикоснись ко мне, и я стану в два раза шире!
+  </div>
+
+  <input type="submit" value="Reset" id="reset"></input>
+  <!--Пройдитесь по массиву `['приготовить кофе','съесть салатик','поменять подгузник ребёнку',
+    'поехать на работу']` и создайте тег li для каждого элемента, например: `<li>приготовить кофе</li>`
+  Добавьте каждый созданный ранее тег li в вашу конструкцию ul с классом "todo-items" -->
+  <ul id="todo-items"></ul>
+  <script>
+    let arrLi = ['приготовить кофе','съесть салатик','поменять подгузник ребёнку','поехать на работу'];
+    let list = document.getElementById("todo-items");
+    for (let i = 0; i < arrLi.length; i++) {
+      let li = document.createElement('li')
+      li.textContent = arrLi[i]
+      list.append(li);
+    }
+  </script>
+
+</body>
+
+</html>

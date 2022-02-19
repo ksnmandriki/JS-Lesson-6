@@ -1,0 +1,23 @@
+.selected { 
+  font-weight: bold;
+}
+
+#ghosting, #resize {
+  width: 200px;
+  height: 200px;
+}
+
+#ghosting {
+  background-color: #ddd;
+}  
+
+#resize {
+  background-color: orange;
+}
+input {
+  margin-top: 0.5em;
+}
+/**Установите фоновый цвет для каждого `<li>` на `yellow`.*/
+li{
+  background-color: yellow;
+}
