@@ -17,7 +17,3 @@
 input {
   margin-top: 0.5em;
 }
-/**Установите фоновый цвет для каждого `<li>` на `yellow`.*/
-li{
-  background-color: yellow;
-}
